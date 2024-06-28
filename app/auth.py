@@ -25,7 +25,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="users/login")
 def verify_password(plain_password, password):
     return pwd_context.verify(plain_password,password) # check the password
 
-def get_password_hash(password):
+# def get_password_hash(password):
     return pwd_context.hash(password) ## hash the password
 
 
